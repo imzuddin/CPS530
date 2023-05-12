@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body style="border: 1px solid black">
+<body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#"> Recipe - Ez </a>
@@ -45,21 +45,20 @@
         </div>
     </div>
 
-    <div class="carousel slide" id="recipeCardControls" data-ride="carousel" style="border: 1px solid red;">
+    <div class="carousel slide" id="recipeCardControls" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="container">
+                <div class="container" id="card">
                     <div class="row">
                         <div class="col-12">
                             <h2> Bannana Bread </h2>
                         </div>
                     </div>
-                    <div class="row" style="border: 1px solid black">
-                        <div class="col-md-6" style="border: 1px solid red">
+                    <div class="row">
+                        <div class="col-md-5">
                             <img class="col-md-12" id="image" src="./images/bread.jpeg" alt="picture of a sliced loaf of bannana bread"> 
                         </div>
-            
-                        <div class="col-md-6 col-lg-3" style="border: 1px solid red">
+                        <div class="col-md-6 col-lg-3" id="ingredients">
                             <h2> Ingredients </h2>
                         
                             <table>
@@ -97,7 +96,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-6 col-lg-3" >
+                        <div class="col-md-6 col-lg-3" id = instruct>
                             <h2> Instructions </h2>
                         
                             <ol>
@@ -106,23 +105,29 @@
                                 <li> Pour mixture into pan and bake the loaf for about 20min </li>
                             </ol>
                         </div>
-            
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class= "carousel-caption" id = "caption">
+                                <p>Bannana Bread</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
                 <div class="carousel-item">
-                    <div class="container">
+                    <div class="container" id="card">
                         <div class="row">
                             <div class="col-12">
                                 <h2> Jello </h2>
                             </div>
                         </div>
-                        <div class="row" style="border: 1px solid black">
-                            <div class="col-md-6" style="border: 1px solid red">
-                                <img class="col-md-12" id="image" src="./images/Jello.jpeg" alt="picture of a sliced loaf of bannana bread"> 
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img class="col-md-12" id="image" src="./images/Jello.jpeg" alt="picture of bowls of jello"> 
                             </div>
                 
-                            <div class="col-md-6 col-lg-3" style="border: 1px solid red">
+                            <div class="col-md-6 col-lg-3" id="ingredients">
                                 <h2> Ingredients </h2>
                             
                                 <table>
@@ -160,7 +165,7 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="col-md-6 col-lg-3" >
+                            <div class="col-md-6 col-lg-3" id = instruct>
                                 <h2> Instructions </h2>
                             
                                 <ol>
@@ -169,23 +174,29 @@
                                     <li> Pour mixture into pan and bake the loaf for about 20min </li>
                                 </ol>
                             </div>
-                
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class= "carousel-caption d-none d-md-block" id = "caption">
+                                    <p>Jello</p>
+                                </div>
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="container">
+                    <div class="container" id="card">
                         <div class="row">
                             <div class="col-12">
                                 <h2> Cilantro Rice </h2>
                             </div>
                         </div>
-                        <div class="row" style="border: 1px solid black">
-                            <div class="col-md-6" style="border: 1px solid red">
-                                <img class="col-md-12" id="image" src="./images/rice.jpeg" alt="picture of a sliced loaf of bannana bread"> 
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img class="col-md-12" src="./images/rice.jpeg" alt="picture of bowl of cilantro and rice"> 
                             </div>
                 
-                            <div class="col-md-6 col-lg-3" style="border: 1px solid red">
+                            <div class="col-md-6 col-lg-3" id="ingredients">
                                 <h2> Ingredients </h2>
                             
                                 <table>
@@ -223,7 +234,7 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="col-md-6 col-lg-3" >
+                            <div class="col-md-6 col-lg-3" id = instruct>
                                 <h2> Instructions </h2>
                             
                                 <ol>
@@ -232,24 +243,26 @@
                                     <li> Pour mixture into pan and bake the loaf for about 20min </li>
                                 </ol>
                             </div>
-                
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class= "carousel-caption d-none d-md-block" id = "caption">
+                                    <p>Cilantro Rice</p>
+                                </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
         <a class="carousel-control-prev" id="cycle" href="#recipeCardControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" id="cycle" href="#recipeCardControls" role="button" data-slide="next">
+        </a>
+        <a class="carousel-control-next" id="cycle" href="#recipeCardControls" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-          </a>
+        </a>
     </div>
-
-
-    
-   
 </body>
 </html>
