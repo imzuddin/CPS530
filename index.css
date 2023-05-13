@@ -34,14 +34,14 @@ table{
 
 
 
-#card {
+.card {
     background-color: white;
     padding: 60px;
     border-radius: 10px;
     border: 8px solid #B6EAFA;
 }
 
-#ingredients{
+.ingredients{
     background-color: #FDA769;
     padding: 10px;
     border-radius: 10px;
@@ -50,7 +50,7 @@ table{
 }
 
 
-#instruct{
+.instruct{
     background-color: #FDA769;
     padding: 10px;
     border-radius: 10px;
@@ -58,7 +58,7 @@ table{
     margin: 10px;
 }
 
-#caption{
+.carousel-caption{
     color: black;
     top: 10%;
 }
