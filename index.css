@@ -62,3 +62,11 @@ table{
     color: black;
     top: 10%;
 }
+
+.img-fluid{
+    width: 20%;
+}
+.adverts{
+    width: 100%;
+    text-align: center;
+}
