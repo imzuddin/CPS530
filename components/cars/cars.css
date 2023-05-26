@@ -1,0 +1,16 @@
+body{
+    height: 100vh;
+    background-color: #579BB1;
+}
+
+#title{
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    width: fit-content;
+    padding: 60px;
+    border-radius: 10px;
+    border: 8px solid #B6EAFA;
+}
