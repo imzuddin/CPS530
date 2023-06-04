@@ -29,8 +29,6 @@ const handlePrevClick = () => {
 
     displayBook(booksData[currIdx])
 }
-$("#next").on("click", handleNextClick);
-$("#prev").click(handlePrevClick);
 
 $.ajax({
     url: `${booksURL}/bookinventory/list`,
@@ -47,6 +45,5 @@ $.ajax({
 $(document).ready(() => {
     document.getElementById('next').addEventListener('click', handleNextClick)
     document.getElementById('prev').addEventListener('click', handlePrevClick)
-
 })
 
